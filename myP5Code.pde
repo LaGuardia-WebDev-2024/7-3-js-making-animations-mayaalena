@@ -2,17 +2,20 @@
 void setup() {
     size(400, 400); 
     background(255,255,255,200);
+    
+  
 }
 
 //🎯Variable Declarations Go Here
 var sunSize = 30; 
-
+var x=10;
+var y= 20;
 
 //🟢Draw Procedure - Runs on Repeat
 void draw(){
-
+// all lines of code here will be run repeatedly
   //💡⬇️⬇️⬇️💡 Your Code For This Unit Goes Here
-  
+
   noStroke();
 
   // the beautiful blue sky
@@ -28,9 +31,10 @@ void draw(){
   
   //ladybug
   fill(200,0,0)
-  ellipse(10, 350, 10, 10)
-
-}
+  ellipse(x, 20,10,10)
+  x = x+1 
+  sunSize= sunSize+5
+};
 
 
 
@@ -41,7 +45,6 @@ void draw(){
 //🟡Mouse Pressed Procedue - Runs When Mouse is Pressed on Canvas
 void mousePressed(){
 
-  
 }
 
 
